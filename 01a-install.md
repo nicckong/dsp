@@ -55,9 +55,9 @@ I installed Python 3, because 2.7.13 is expected to be the last major release in
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
 I typed below in my terminal:
-'''
+```
 python --version
-'''
+```
 
  
 
