@@ -26,9 +26,9 @@ mkdir | creating a directory
 rmdir | deleting a directory
 touch | creating a file using `touch` command
 rm | deleting a file
-mv <oldname> <newname> | renaming a file
+mv | renaming a file
 ls -a | listing hidden files
-cp <file> <folder>/ | copying a file from one directory to another
+cp | copying a file from one directory to another
 
 ---
 
