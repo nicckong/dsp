@@ -26,9 +26,9 @@ mkdir | creating a directory
 rmdir | deleting a directory
 touch | creating a file using `touch` command
 rm | deleting a file
-renaming a file
-listing hidden files
-cp -r | copying a file from one directory to another
+mv <<oldname>> <<newname>> | renaming a file
+ls -a | listing hidden files
+cp <<file>> <<folder>>/ | copying a file from one directory to another
 
 ---
 
@@ -43,7 +43,15 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Code | Description
+---- | ----
+ls | list directory
+ls -a | list all files and folders
+ls -l | list with long format (show permissions)
+ls -lh | list long format with readable file size
+ls -lah | list long format with readable file size including hidden files
+ls -t | sort by modification time & date
+ls -Glp | list long format but exclude ownername and display directories with "/"
 
 ---
 
@@ -51,7 +59,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+-a	Displays all files.
+-l	Displays the long format listing.
+-R	Displays subdirectories as well.
+-t	Displays newest files first. (based on timestamp)
+-1	Displays each entry on a line.
 
 ---
 
@@ -59,7 +71,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs reads data from standard input and executes the command one or more times based on the input read. 
+An example of using xargs is to search for files containing a specific text/string. For example, to find .txt files containing text 'abc':
+`
+find -name "*.txt" | xargs grep "abc"
+`
+
 
  
 
