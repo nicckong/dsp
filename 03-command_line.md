@@ -26,9 +26,9 @@ mkdir | creating a directory
 rmdir | deleting a directory
 touch | creating a file using `touch` command
 rm | deleting a file
-mv <<oldname>> <<newname>> | renaming a file
+mv <oldname> <newname> | renaming a file
 ls -a | listing hidden files
-cp <<file>> <<folder>>/ | copying a file from one directory to another
+cp <file> <folder>/ | copying a file from one directory to another
 
 ---
 
@@ -73,6 +73,7 @@ What does `xargs` do? Give an example of how to use it.
 
 xargs reads data from standard input and executes the command one or more times based on the input read. 
 An example of using xargs is to search for files containing a specific text/string. For example, to find .txt files containing text 'abc':
+
 `
 find -name "*.txt" | xargs grep "abc"
 `
