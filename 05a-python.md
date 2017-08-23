@@ -80,7 +80,7 @@ nums = {n**2 for n in range(10)}
 
 Example disctionary comprehension
 ```python
-{k: v for d in (d1, d2) for k, v in d.items()}
+d3 = {k: v for d in (d1, d2) for k, v in d.items()}
 ```
 
 ---
