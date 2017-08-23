@@ -1,5 +1,4 @@
 # Hint:  use Google to find python function
-
 import datetime
 
 ####a) 
@@ -18,7 +17,7 @@ print ("{} days".format (diff.days))
 
 ####c)  
 date_start = '15-Jan-1994'  
-date_stop = '14-Jul-2015'
+date_stop = '14-Jul-2015'  
 
 diff = datetime.datetime.strptime(date_stop, '%d-%b-%Y').date() - datetime.datetime.strptime(date_start, '%d-%b-%Y').date()
 print ("{} days".format (diff.days))
