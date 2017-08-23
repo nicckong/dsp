@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists and tuples are both a list of values. they are both indexed by numbers, starting from zero. 
+Lists are mutable - you can add, remove and modify the values in lists, whereas Tuples are not. 
+Tuples will work as keys in disctionaries due to its immutable type nature.
 
 ---
 
@@ -20,7 +22,10 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists are ordered collections of elements. Examples of using lists ae iteration and list Comprehension.
+Sets are unordered collections of unique elements. Examples of using sets are testing and eliminating duplicate entries.
+
+Sets are more efficient than lists in finding an element. This is because sets use hash lookup and lists iterate. 
 
 ---
 
@@ -28,7 +33,16 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+`Lambda` function is a way to create small functions without names. It is used wherever function objects are required. It is however restricted to a single expression. 
+
+An exmple of `lambda` in the `key` argument to `sorted` is:
+
+```
+python
+
+sorted(['ABC', 'aaa', 'def', 'cde'], key=lambda word: word.lower())
+
+```
 
 ---
 
@@ -36,7 +50,8 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
+
 
 ---
 
