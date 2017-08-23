@@ -37,8 +37,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 An exmple of `lambda` in the `key` argument to `sorted` is:
 
-```
-python
+```python
 
 sorted(['ABC', 'aaa', 'def', 'cde'], key=lambda word: word.lower())
 
@@ -50,8 +49,39 @@ sorted(['ABC', 'aaa', 'def', 'cde'], key=lambda word: word.lower())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
+List comprehensions provide a concise way to create lists based on existing lists. 
 
+It consists of an iterable containing an expression followed by a `for` clause, then `for` or `if` clauses (optional). The expressions can be anything, meaning you can put in all kinds of objects in lists.
 
+Example `map`
+```python
+a = [1,2,3,4]
+b = [5,6,7,8]
+print (list(map(lambda x,y:x+y, a,b)))
+print ([x + y for x, y in zip(a,b)])
+```
+
+Example `filter`
+```python
+numbers = [1,4,2,32,25,8,13,18,34]
+
+print (list(filter(lambda x: x % 2 == 0, numbers)))
+print ([x for x in numbers if x % 2 == 0])
+```
+
+In cases where `map` / `filter` and list comprehensions can both be used, list comprehension is more preferred as it tends to be more efficient and easier to read.
+
+However, list comprehensions is not applicable if the construction rule is too complicated to be expressed with `for` and `if` statements. In this case, `map` / `filter` should be used instead. 
+
+Example set comprehension
+```python
+nums = {n**2 for n in range(10)}
+```
+
+Example disctionary comprehension
+```python
+{k: v for d in (d1, d2) for k, v in d.items()}
+```
 
 ---
 
