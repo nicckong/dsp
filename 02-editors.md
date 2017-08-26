@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
-I prefer emacs becasue it has syntax highlights :smiley:
+>> I prefer vim because it is commonnly as in it is a default in many systems :smiley:
 
 --
 
@@ -89,6 +89,6 @@ I prefer emacs becasue it has syntax highlights :smiley:
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I think I will use Sublime text editor because it has slick user interface. It has a feature called "Goto Anything", which allows quick navigation between files. One useful keyboard shortcit is Shift-Command-P. It allows me to set my current file to python by simplying typing "sspy". I customize my editor with Material Theme.
+>> I think I will use Sublime text editor because it has slick user interface. It has a feature called "Goto Anything", which allows quick navigation between files. One useful keyboard shortcit is Shift-Command-P. It allows me to set my current file to python by simplying typing "sspy". I customize my editor with Material Theme.
 
  
