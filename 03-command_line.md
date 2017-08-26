@@ -43,7 +43,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-Code | Description
+>> Code | Description
 ---- | ----
 ls | list directory
 ls -a | list all files and folders
@@ -59,6 +59,7 @@ ls -Glp | list long format but exclude ownername and display directories with "/
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
+>> 
 -a	Displays all files.
 -l	Displays the long format listing.
 -R	Displays subdirectories as well.
@@ -71,7 +72,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-xargs reads data from standard input and executes the command one or more times based on the input read. 
+>> xargs reads data from standard input and executes the command one or more times based on the input read. 
 An example of using xargs is to search for files containing a specific text/string. For example, to find .txt files containing text 'abc':
 
 `
