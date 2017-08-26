@@ -63,11 +63,11 @@ ls -Glp | list long format but exclude ownername and display directories with "/
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
->> -a	Displays all files.
->> -l	Displays the long format listing.
->> -R	Displays subdirectories as well.
->> -t	Displays newest files first. (based on timestamp)
->> -1	Displays each entry on a line.
+-a	Displays all files.
+-l	Displays the long format listing.
+-R	Displays subdirectories as well.
+-t	Displays newest files first. (based on timestamp)
+-1	Displays each entry on a line.
 
 ---
 
