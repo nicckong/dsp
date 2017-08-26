@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-I installed Python 3, because 2.7.13 is expected to be the last major release in the 2.7 series and will be officially phrased out in 2020.
+>> I installed Python 3, because 2.7.13 is expected to be the last major release in the 2.7 series and will be officially phrased out in 2020.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-I typed below in my terminal:
+>> I typed below in my terminal:
 ```
 python
 ```
