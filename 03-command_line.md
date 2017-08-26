@@ -19,6 +19,8 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
+>>
+
 Code | Description
 ---- | ----
 pwd | show current working directory path
@@ -29,6 +31,8 @@ rm | deleting a file
 mv | renaming a file
 ls -a | listing hidden files
 cp | copying a file from one directory to another
+cd .. | go up one folder
+man | show manual
 
 ---
 
@@ -43,7 +47,9 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
->> Code | Description
+>> 
+
+Code | Description
 ---- | ----
 ls | list directory
 ls -a | list all files and folders
