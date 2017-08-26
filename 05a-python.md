@@ -12,9 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-Lists and tuples are both a list of values. they are both indexed by numbers, starting from zero. 
-Lists are mutable - you can add, remove and modify the values in lists, whereas Tuples are not. 
-Tuples will work as keys in disctionaries due to its immutable type nature.
+>> Lists and tuples are both a list of values. they are both indexed by numbers, starting from zero. Lists are mutable - you can add, remove and modify the values in lists, whereas Tuples are not. Tuples will work as keys in disctionaries due to its immutable type nature.
 
 ---
 
@@ -22,10 +20,9 @@ Tuples will work as keys in disctionaries due to its immutable type nature.
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-Lists are ordered collections of elements. Examples of using lists ae iteration and list Comprehension.
-Sets are unordered collections of unique elements. Examples of using sets are testing and eliminating duplicate entries.
+>> Lists are ordered collections of elements. Examples of using lists ae iteration and list Comprehension. Sets are unordered collections of unique elements. Examples of using sets are testing and eliminating duplicate entries.
 
-Sets are more efficient than lists in finding an element. This is because sets use hash lookup and lists iterate. 
+>> Sets are more efficient than lists in finding an element. This is because sets use hash lookup and lists iterate. 
 
 ---
 
@@ -33,9 +30,9 @@ Sets are more efficient than lists in finding an element. This is because sets u
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-`Lambda` function is a way to create small functions without names. It is used wherever function objects are required. It is however restricted to a single expression. 
+>> `Lambda` function is a way to create small functions without names. It is used wherever function objects are required. It is however restricted to a single expression. 
 
-An exmple of `lambda` in the `key` argument to `sorted` is:
+>> An exmple of `lambda` in the `key` argument to `sorted` is:
 
 ```python
 
@@ -49,9 +46,9 @@ sorted(['ABC', 'aaa', 'def', 'cde'], key=lambda word: word.lower())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-List comprehensions provide a concise way to create lists based on existing lists. 
+>> List comprehensions provide a concise way to create lists based on existing lists. 
 
-It consists of an iterable containing an expression followed by a `for` clause, then `for` or `if` clauses (optional). The expressions can be anything, meaning you can put in all kinds of objects in lists.
+>> It consists of an iterable containing an expression followed by a `for` clause, then `for` or `if` clauses (optional). The expressions can be anything, meaning you can put in all kinds of objects in lists.
 
 Example `map`
 ```python
@@ -69,16 +66,16 @@ print (list(filter(lambda x: x % 2 == 0, numbers)))
 print ([x for x in numbers if x % 2 == 0])
 ```
 
-In cases where `map` / `filter` and list comprehensions can both be used, list comprehension is more preferred as it tends to be more efficient and easier to read.
+>> In cases where `map` / `filter` and list comprehensions can both be used, list comprehension is more preferred as it tends to be more efficient and easier to read.
 
-However, list comprehensions is not applicable if the construction rule is too complicated to be expressed with `for` and `if` statements. In this case, `map` / `filter` should be used instead. 
+>> However, list comprehensions is not applicable if the construction rule is too complicated to be expressed with `for` and `if` statements. In this case, `map` / `filter` should be used instead. 
 
-Example set comprehension
+>> Example set comprehension
 ```python
 nums = {n**2 for n in range(10)}
 ```
 
-Example disctionary comprehension
+>> Example disctionary comprehension
 ```python
 d3 = {k: v for d in (d1, d2) for k, v in d.items()}
 ```
@@ -96,7 +93,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
-937 days
+>> 937 days
 
 b.  
 ```
@@ -104,7 +101,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
-513 days
+>> 513 days
 
 c.  
 ```
@@ -112,7 +109,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
-7850 days
+>> 7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
