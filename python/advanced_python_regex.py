@@ -14,8 +14,9 @@ email = set()
 
 for staff in faculty:
 	#degree
-	d = re.findall('\S.\S*', staff[1])
+	d = re.findall('.\S*', staff[1])
 	for a in d:
+		a = a.lstrip()
 		degree[a.replace('.', '')] = degree.get(a.replace('.', ''), 0)+1
 	
 	#title

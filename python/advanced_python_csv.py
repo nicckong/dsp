@@ -1,5 +1,4 @@
 import csv
-import re
 
 with open('faculty.csv', newline='') as csvfile:
 	f = csv.reader(csvfile)
@@ -14,5 +13,6 @@ for staff in faculty:
 
 with open('emails.csv', 'w') as myfile:
 	wr = csv.writer(myfile)
+	wr.writerow(['list_of_emails'])
 	wr.writerows([email] for email in email_address)
 myfile.close()

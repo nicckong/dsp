@@ -1,6 +1,7 @@
 import csv
 import re
 from collections import defaultdict
+import pprint as pp
 
 with open('faculty.csv', newline='') as csvfile:
 	f = csv.reader(csvfile)
@@ -22,14 +23,13 @@ for staff in faculty:
 	professor_dict[firstname, lastname] = staff[1:]
 
 #Q6: first 3 elements in faculty_dict
-print ({k: faculty_dict[k] for k in sorted(faculty_dict.keys())[0:3]})
+pp.pprint ({k: faculty_dict[k] for k in sorted(faculty_dict.keys())[0:3]})
 
 #Q7: first 3 elements in professor_dict
-print ({k: professor_dict[k] for k in sorted(professor_dict.keys())[0:3]})
+pp.pprint ({k: professor_dict[k] for k in sorted(professor_dict.keys())[0:3]})
 
 #Q8: sort by lastname
 for k,v in sorted(professor_dict.items(), key= lambda x : x[0][1]):
 	print (k, v)
-
 
 
