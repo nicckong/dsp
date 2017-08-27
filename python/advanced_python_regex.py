@@ -1,5 +1,6 @@
 import csv
 import re
+import pprint as pp
 
 with open('faculty.csv', newline='') as csvfile:
 	f = csv.reader(csvfile)
@@ -33,8 +34,7 @@ print (degree)
 print (title)
 
 #Q3: ist of email addresses
-for e in email_address:
-	print (e)
+pp.pprint(email_address)
 
 #Q4: different email domains 	
 print (list(email))
