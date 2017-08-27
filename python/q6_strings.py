@@ -18,7 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+    if count >= 10:
+        ans = 'many'
+    else:
+        ans = count
+    return 'Number of dounts: ' + ans
 
 
 def both_ends(s):
@@ -37,8 +42,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
-
+    if len(s) < 2:
+        ans = ''
+    else:
+        ans = s[:2]+s[-2:]
+    return ans
 
 def fix_start(s):
     """
@@ -56,7 +64,17 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    char = ''
+    temp = ''
+    for i in range(len(s)):
+        if i == 0:
+            char = s[i]
+            temp = char
+        elif s[i] == char:
+            temp = temp+"*"
+        else:
+            temp = temp + s[i]
+    return temp
 
 
 def mix_up(a, b):
@@ -74,7 +92,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    new_a = b[:2]+a[2:]
+    new_b = a[:2]+b[2:]
+    return new_a + ' ' + new_b
 
 
 def verbing(s):
@@ -91,7 +111,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    temp = ''
+    if len(s) < 3:
+        temp = s
+    else:
+        if s[-3:] == 'ing':
+            temp = s+'ly'
+        else:
+            temp = s+"ing"
+    return temp
 
 
 def not_bad(s):
@@ -111,7 +139,15 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+      
+    if 'not' in s and 'bad' in s:
+        if s.index('bad') > s.index('not'):
+            temp =  s[:s.index('not')]+'good'+s[s.index('bad')+3:]
+        else: 
+            temp = s
+    else:
+        temp = s
+    return temp
 
 
 def front_back(a, b):
@@ -130,4 +166,10 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    temp = ''
+    char_a = len(a) % 2
+    char_b = len(b) % 2
+
+    temp = a[:len(a)//2 + char_a] + b[:len(b)//2 + char_b] + a[len(a)//2 + char_a :] + b[len(b)//2 + char_b:]
+
+    return temp
