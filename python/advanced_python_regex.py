@@ -26,10 +26,15 @@ for staff in faculty:
 	e = re.search('(@.*$)' , staff[3]).group()[1:]
 	email.add(e)
 
+#Q1: different degrees and their frequencies
 print (degree)
+
+#Q2: different titles and their frequencies
 print (title)
 
+#Q3: ist of email addresses
 for e in email_address:
 	print (e)
-	
+
+#Q4: different email domains 	
 print (list(email))

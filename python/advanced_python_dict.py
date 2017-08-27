@@ -21,13 +21,13 @@ for staff in faculty:
 	firstname = re.search('^\w*', staff[0]).group()
 	professor_dict[firstname, lastname] = staff[1:]
 
-#first 3 elements in faculty_dict
+#Q6: first 3 elements in faculty_dict
 print ({k: faculty_dict[k] for k in sorted(faculty_dict.keys())[0:3]})
 
-#first 3 elements in professor_dict
+#Q7: first 3 elements in professor_dict
 print ({k: professor_dict[k] for k in sorted(professor_dict.keys())[0:3]})
 
-#sort by lastname
+#Q8: sort by lastname
 for k,v in sorted(professor_dict.items(), key= lambda x : x[0][1]):
 	print (k, v)
 
