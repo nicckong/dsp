@@ -15,7 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            count += 1
+
+    return count
 
 
 def front_x(words):
@@ -32,7 +37,14 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    temp1 = []
+    temp2 = []
+    for word in words:
+        if word[0] == 'x':
+            temp1.append(word)
+        else:
+            temp2.append(word)
+    return (sorted(temp1) + sorted(temp2))
 
 
 def sort_last(tuples):
@@ -49,7 +61,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return (sorted(tuples, key = lambda x: x[len(x)-1]))
 
 
 def remove_adjacent(nums):
@@ -68,7 +80,7 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    return [nums[i] for i in range(len(nums)) if i == 0 or nums[i-1] != nums[i]]
 
 
 def linear_merge(list1, list2):
@@ -85,4 +97,26 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    result = []
+    lists_len =  len(list1) + len(list2)
+
+
+    while len(list1) > 0 or len(list2) > 0:
+        try:
+            list1[0] < list2[0]
+            if list1[0] < list2[0]:
+                result.append(list1[0])
+                list1.pop(0)
+            else:
+                result.append(list2[0])
+                list2.pop(0)
+
+        except IndexError:
+            if len(list1) > len(list2):
+                result = result + list1[len(result) - lists_len:] 
+            else:
+                result = result + list2[len(result) - lists_len:] 
+            break
+    
+    return result
+    
