@@ -84,7 +84,15 @@ This questions asks you to examine the function that produces random numbers.  I
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
-
+```python
+low = dist.cdf(177.8)    
+high = dist.cdf(185.4) 
+low, high, high-low
+```
+```
+(0.48963902786483265, 0.83173371081078573, 0.34209468294595308)
+```
+>> about 34% of the U.S. male population is in this range
 
 ### Q5. Bayesian (Elvis Presley twin) 
 
