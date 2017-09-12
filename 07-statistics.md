@@ -78,8 +78,29 @@ CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
+```python
+pmf = thinkstats2.Pmf(resp.numkdhh,label='actual')
+biased_pmf = BiasPmf(pmf, label='baised')
+thinkplot.PrePlot(2)
+thinkplot.Pmfs([pmf, biased_pmf])
+thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+```
+
 ### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
+
+```python
+test = np.random.random(1000)
+
+pmf = thinkstats2.Pmf(test)
+thinkplot.Pmf(pmf, linewidth=0.1)
+thinkplot.Config(xlabel='Random variate', ylabel='PMF')
+
+cdf = thinkstats2.Cdf(test)
+thinkplot.cdf(cdf)
+thinkplot.Config(xlabel='Random variate', ylabel='PMF')
+```
+
 
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
