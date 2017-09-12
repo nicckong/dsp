@@ -72,7 +72,7 @@ You will see effect size again and again in results of algorithms that are run i
 ```python
 CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 ```
->> the cohen's d for totalwgt_lb is -0.088672927072602006. The difference in means is -0.089 standard deviations, which is largest than the difference in means of pregnancy length.  
+>> the cohen's d for totalwgt_lb is -0.088672927072602006. The difference in means is -0.089 standard deviations, which is larger than the difference in means of pregnancy length.  
 
 
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
